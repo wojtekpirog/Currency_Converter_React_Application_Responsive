@@ -12,4 +12,4 @@ The technologies used to build the application are as follows:
 ## Features
 
 - **Responsiveness**
-  The application is fully responsive. You can You can see it comfortably on your mobile phone, tablet, or desktop.
+  The application is fully responsive. You can see it comfortably on your mobile phone, tablet, or desktop.
