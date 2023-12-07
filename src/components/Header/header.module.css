@@ -2,14 +2,6 @@
   display: flex;
 }
 
-.active {
-  display: flex;
-}
-
-.inactive {
-  display: none;
-}
-
 .pageHeader {
   flex-direction: column;
   justify-content: space-between;
@@ -45,7 +37,7 @@
 }
 
 .navbarLinks {
-  /* display: none; */
+  display: none;
   width: 100%;
   list-style-type: none;
   padding-left: 0;

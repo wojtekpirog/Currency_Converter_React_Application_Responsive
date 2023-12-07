@@ -5,6 +5,11 @@ body {
   padding: 20px;
 }
 
+.active {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 992px) {
   body {
     padding: 40px;

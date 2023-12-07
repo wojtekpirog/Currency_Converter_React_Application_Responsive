@@ -23,7 +23,7 @@ function Header() {
             <div></div>
           </button>
         </div>
-        <ul className={header.navbarLinks}>
+        <ul className={`${header.navbarLinks} ${collapse ? "active" : ""}`}>
           <li><a href="#" target="_blank" draggable="true">About Me</a></li>
           <li><a href="#" target="_blank" draggable="true">Features</a></li>
           <li><a href="#" target="_blank" draggable="true">Contact</a></li>
