@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import header from './header.module.css';
 import coinImage from '../../assets/images/coin.svg';
 
 function Header() {
@@ -11,19 +10,20 @@ function Header() {
 
   return (
     <header>
-      <nav className={`${header.pageHeader} ${header.flex}`}>
-        <div className={`${header.navbar} ${header.flex}`}>
-          <div className={`${header.pageLogo} ${header.flex}`}>
+      <nav className="pageHeader flex">
+        <div className="navbar flex">
+          <div className="pageLogo flex">
             <img src={coinImage} alt="page logo icon" />
             <span>exchange.me</span>
           </div>
-          <button type="button" className={header.navbarToggler} onClick={toggleNavbar}>
+          <button type="button" className="navbarToggler" onClick={toggleNavbar}>
             <div></div>
             <div></div>
             <div></div>
           </button>
         </div>
-        <ul className={`${header.navbarLinks} ${collapse ? "active" : ""}`}>
+        <ul className={`navbarLinks ${collapse ? "active" : "inActive"}`}>
+        {/* <ul className="navbarLinks" style={{display: `${collapse ? 'block' : 'none'}`}}> */}
           <li><a href="#" target="_blank" draggable="true">About Me</a></li>
           <li><a href="#" target="_blank" draggable="true">Features</a></li>
           <li><a href="#" target="_blank" draggable="true">Contact</a></li>
