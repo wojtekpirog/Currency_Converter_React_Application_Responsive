@@ -1,5 +1,6 @@
 import React from 'react';
 import ConverterHeader from './ConverterHeader/ConverterHeader';
+import AmountInput from './AmountInput/AmountInput';
 import main from './main.module.css';
 
 function Main() {
@@ -10,6 +11,9 @@ function Main() {
         <section>
           <div className={main.converterWrapper}>
             <ConverterHeader />
+            <main>
+              <AmountInput />
+            </main>
           </div>
         </section>
       </main>      
