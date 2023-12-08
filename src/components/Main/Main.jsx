@@ -24,7 +24,14 @@ function Main() {
             </main>
           </div>
         </section>
-      </main>      
+        <section>
+          <h3>You can find the developer at:</h3>
+          <div className="socialMedia"></div>
+        </section>
+      </main>
+      <footer>
+        &copy;exchange.me 2023
+      </footer>
     </React.Fragment>
   );
 }

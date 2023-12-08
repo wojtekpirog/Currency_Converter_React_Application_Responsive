@@ -137,6 +137,23 @@ label {
 
 .selectContainer {
   width: 100%;
+  position: relative;
+}
+
+.selectContainer>select {
+  appearance: none;
+}
+
+.selectIcon {
+  position: absolute;
+  right: 0;
+  top: 28px;
+  background-color: #5d45a0;
+  height: calc(100% - 28px);
+}
+
+.selectIcon>img {
+  width: 24px;
 }
 
 select#fromCurrency,
@@ -154,8 +171,20 @@ button#convertBtn {
 }
 
 button#convertBtn {
-  margin-top: 20px;
+  margin-top: 20px;  
+  transition: background-color .2s linear;
 }
+
+button#convertBtn>span {
+  position: relative;
+}
+
+button#convertBtn img {
+  position: absolute;
+  bottom: -1.5px;
+  opacity: 0;
+  transition: all .2s linear;
+} 
 
 p#result {
   margin-top: 20px;
@@ -164,10 +193,10 @@ p#result {
   text-align: center;
 }
 
-@media screen and (min-width: 500px) {
-  .currencySelection {
-    flex-direction: row;
-  }
+footer {
+  color: #9771fe;
+  text-align: right;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 600px) {
@@ -183,6 +212,12 @@ p#result {
   }
   .converterWrapper {
     width: 500px;
+  }
+  .currencySelection {
+    flex-direction: row;
+  }
+  .selectIcon>img {
+    width: 30px;
   }
   h3 {
     font-size: 1.5rem;
@@ -227,7 +262,14 @@ p#result {
   h3 {
     font-size: 2rem;
   }
-  .selectContainer>select {
+  .selectContainer>select, button#convertBtn {
     cursor: pointer;
-  } 
+  }
+  button#convertBtn:hover {
+    background-color: #5d45a0;
+  }
+  button#convertBtn:hover img {
+    opacity: 1;
+    transform: translateX(10px);
+  }
 }

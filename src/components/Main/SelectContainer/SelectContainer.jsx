@@ -1,5 +1,5 @@
 import React from 'react';
-// import arrowDownShort from '../../../assets/images/arrow-down-short.svg';
+import arrowDownShort from '../../../assets/images/arrow-down-short.svg';
 
 function SelectContainer({ id, label }) {
   return (
@@ -7,11 +7,11 @@ function SelectContainer({ id, label }) {
       <label htmlFor={id}>{label}</label>
       <select id={id}>
         <option value="PLN">Polish Zloty</option>
-        <option value="EUR">Euro</option>
+        <option value="EUR">Dolar Australijski</option>
       </select>
-      {/* <div className="selectIcon flex">
+      <div className="selectIcon flex">
         <img src={arrowDownShort} alt="currency select icon" />
-      </div> */}
+      </div>
     </div>
   );
 }
