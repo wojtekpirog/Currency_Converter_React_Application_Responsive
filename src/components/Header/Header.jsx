@@ -23,7 +23,6 @@ function Header() {
           </button>
         </div>
         <ul className={`navbarLinks ${collapse ? "active" : "inActive"}`}>
-        {/* <ul className="navbarLinks" style={{display: `${collapse ? 'block' : 'none'}`}}> */}
           <li><a href="#" target="_blank" draggable="true">About Me</a></li>
           <li><a href="#" target="_blank" draggable="true">Features</a></li>
           <li><a href="#" target="_blank" draggable="true">Contact</a></li>

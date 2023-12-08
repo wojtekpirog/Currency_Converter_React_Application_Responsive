@@ -129,6 +129,47 @@ label {
   font-size: 1.2rem;
 }
 
+.currencySelection {
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.selectContainer {
+  width: 100%;
+}
+
+select#fromCurrency,
+select#toCurrency,
+button#convertBtn {
+  padding: 10px;
+  width: 100%;
+  background-color: #9771fe;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+
+button#convertBtn {
+  margin-top: 20px;
+}
+
+p#result {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .currencySelection {
+    flex-direction: row;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .pageLogo>img {
     width: 2.5rem;
@@ -144,6 +185,9 @@ label {
     width: 500px;
   }
   h3 {
+    font-size: 1.5rem;
+  }
+  p#result {
     font-size: 1.5rem;
   }
 }
@@ -183,4 +227,7 @@ label {
   h3 {
     font-size: 2rem;
   }
+  .selectContainer>select {
+    cursor: pointer;
+  } 
 }

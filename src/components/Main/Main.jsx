@@ -1,6 +1,9 @@
 import React from 'react';
 import ConverterHeader from './ConverterHeader/ConverterHeader';
 import AmountInput from './AmountInput/AmountInput';
+import SelectContainer from './SelectContainer/SelectContainer';
+import ConvertButton from './ConvertButton/ConvertButton';
+import ResultBox from './ResultBox/ResultBox';
 
 function Main() {
   return (
@@ -12,6 +15,12 @@ function Main() {
             <ConverterHeader />
             <main>
               <AmountInput />
+              <div className="currencySelection flex">
+                <SelectContainer id="fromCurrency" label="From:"/>
+                <SelectContainer id="toCurrency" label="To:"/>
+              </div>
+              <ConvertButton />
+              <ResultBox />
             </main>
           </div>
         </section>
