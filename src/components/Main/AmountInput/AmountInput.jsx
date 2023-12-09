@@ -4,7 +4,7 @@ function AmountInput() {
   return (
     <React.Fragment>
       <label htmlFor="amount">Amount:</label>
-      <input type="number" id="amount" className="amountInput" value="100" />      
+      <input type="number" id="amount" className="amountInput" />      
     </React.Fragment>
   );
 }

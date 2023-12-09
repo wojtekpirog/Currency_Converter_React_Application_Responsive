@@ -1,5 +1,18 @@
+:root {
+  --bg-light: #e3e3e3;
+  --white: #fff;
+  --dark: #282828;
+  --violet: #9771fe;
+  --blue: #3051f1;
+  --purple: #c92bb7;
+  --red: #f73344;
+  --orange: #fa8e37;
+  --yellow-light: #fcdf8f;
+  --yellow: #fbd377;
+}
+
 body {
-  background-color: #282828;
+  background-color: var(--dark);
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 20px;
@@ -29,7 +42,7 @@ body {
 }
 
 .pageLogo>span {
-  color: #9771fe;
+  color: var(--violet);
   font-size: 2rem;
   font-weight: bold;
   font-style: italic;
@@ -39,14 +52,14 @@ body {
 .navbarToggler {
   width: 50px;
   height: 50px;
-  background-color: #282828;
+  background-color: var(--dark);
   border: none;
   outline: none;
 }
 
 .navbarToggler>div {
   height: 6px;
-  background-color: #e3e3e3;
+  background-color: var(--bg-light);
   margin: .5rem 0;
   border-radius: 10px;
 }
@@ -59,19 +72,19 @@ body {
 
 .navbarLinks>li {
   text-align: center;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--white);
   padding: 10px 20px;
 }
 
 .navbarLinks>li>a {
   position: relative;
   text-decoration: none;
-  color: #9771fe;
+  color: var(--violet);
 }
 
 .navbarLinks>li>a::after {
   content: '';
-  background-color: #9771fe;
+  background-color: var(--violet);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -88,24 +101,30 @@ body {
 h1 {
   margin: 2.5rem 0;
   font-size: 3rem;
-  color: #fff;
+  color: var(--white);
 }
 
 .exchange {
-  color: #9771fe;
+  color: var(--violet);
 }
 
 .converterWrapper {
   width: 90%;
   margin: 0 auto;
-  background-color: #fff;
-  border: 2px solid #9771fe;
+  background-color: var(--white);
+  border: 2px solid var(--violet);
   border-radius: 10px;
   padding: 20px;
 }
 
 .converterHeader>header {
   margin-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: var(--white);
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -161,13 +180,13 @@ select#toCurrency,
 button#convertBtn {
   padding: 10px;
   width: 100%;
-  background-color: #9771fe;
+  background-color: var(--violet);
   outline: none;
   border: none;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-  color: #fff;
+  color: var(--white);
 }
 
 button#convertBtn {
@@ -193,8 +212,21 @@ p#result {
   text-align: center;
 }
 
+.socialMedia {
+  justify-content: space-evenly;
+  margin: 0 0 20px 0;
+  border-top: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+}
+
+.socialMedia>a {
+  width: 25%;
+  padding: 30px 0;
+  justify-content: center;
+}
+
 footer {
-  color: #9771fe;
+  color: var(--violet);
   text-align: right;
   font-size: 14px;
 }
@@ -219,7 +251,7 @@ footer {
   .selectIcon>img {
     width: 30px;
   }
-  h3 {
+  h2,h3 {
     font-size: 1.5rem;
   }
   p#result {
@@ -259,7 +291,7 @@ footer {
   .navbarLinks>li>a:hover::after {
     transform: scale(1);
   }
-  h3 {
+  h2,h3 {
     font-size: 2rem;
   }
   .selectContainer>select, button#convertBtn {
@@ -271,5 +303,21 @@ footer {
   button#convertBtn:hover img {
     opacity: 1;
     transform: translateX(10px);
+  }
+  .facebookLink:hover {
+    background-color: #17a9fd;
+  }
+  .instagramLink:hover {
+    background: radial-gradient(circle farthest-corner at 5% 120%,
+      var(--yellow) 10%,
+      var(--orange) 30%,
+      var(--red) 45%,
+      transparent 65%), linear-gradient(45deg, var(--blue) 5%, var(--violet) 30%, var(--violet) 50%);
+  }
+  .linkedinLink:hover {
+    background-color: #0a66c2;
+  }
+  .githubLink:hover {
+    background-color: #000;
   }
 }

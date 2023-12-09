@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import coinImage from '../../assets/images/coin.svg';
 
 function Header() {

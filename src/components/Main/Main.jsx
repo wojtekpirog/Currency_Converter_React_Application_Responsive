@@ -4,6 +4,11 @@ import AmountInput from './AmountInput/AmountInput';
 import SelectContainer from './SelectContainer/SelectContainer';
 import ConvertButton from './ConvertButton/ConvertButton';
 import ResultBox from './ResultBox/ResultBox';
+import SocialBox from './SocialBox/SocialBox';
+import fbLogo from '../../assets/images/facebook.svg';
+import igLogo from '../../assets/images/instagram.svg';
+import inLogo from '../../assets/images/linkedin.svg';
+import ghLogo from '../../assets/images/github.svg';
 
 function Main() {
   return (
@@ -25,13 +30,15 @@ function Main() {
           </div>
         </section>
         <section>
-          <h3>You can find the developer at:</h3>
-          <div className="socialMedia"></div>
+          <h2>You can find the developer at:</h2>
+          <div className="socialMedia flex">
+            <SocialBox className="facebookLink" imageFile={fbLogo} altText="facebook link"/>
+            <SocialBox className="instagramLink" imageFile={igLogo} altText="instagram link"/>
+            <SocialBox className="linkedinLink" imageFile={inLogo} altText="linkedin link"/>
+            <SocialBox className="githubLink" imageFile={ghLogo} altText="github link"/>
+          </div>
         </section>
       </main>
-      <footer>
-        &copy;exchange.me 2023
-      </footer>
     </React.Fragment>
   );
 }
